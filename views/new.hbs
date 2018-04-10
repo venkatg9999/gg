@@ -1,0 +1,77 @@
+
+
+<table id="userTable" class="table">
+
+
+                <head>
+
+                <style>
+                    table {
+                        font-family: arial, sans-serif;
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    td, th {
+                        border: 1px solid #dddddd;
+                        text-align: left;
+                        padding: 8px;
+                    }
+
+                    tr:nth-child(even) {
+                        background-color: #dddddd;
+                    }
+                </style>
+                </head>
+
+
+
+                <table style="width:100%">
+
+                    <th>BusType</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>BPName </th>
+                    <th>BPContactNumber</th>
+                    <th>BPTime</th>
+                    <th>BPLandmark</th>
+                    <th>totalbasefare</th>
+                    <th>DepartureTime</th>
+                    <th>TravelsName</th>
+                    <th>ugcid</th>
+
+                </thead>
+
+                <tbody>
+
+
+
+
+                    {{#each array1}}
+
+                  <tr>
+
+                    <td>{{this.BusType}}</td>
+                    <td>{{this.origin}}</td>
+                    <td>{{this.destination}}</td>
+                    <td>{{this.BPName}}</td>
+                    <td>{{this.BPContactNumber}}</td>
+                    <td>{{this.BPTime}}</td>
+                    <td>{{this.BPLandmark}}</td>
+                    <td>{{this.totalbasefare}}</td>
+                    <td>{{this.DepartureTime}}</td>
+
+                    <td>{{this.TravelsName}}</td>
+
+                    <td>{{this.ugcid}}</td>
+
+                  </tr>
+                </tbody>
+            {{/each}}
+        </table>
+
+
+
+
+
+
